@@ -21,6 +21,7 @@ public class NumberSortingSystem {
             System.out.println("------------------------------");
             System.out.print("Choose an option: ");
             choice = input.nextInt();
+            input.nextLine();
 
             switch(choice){
                 case 1 :
@@ -56,11 +57,11 @@ public class NumberSortingSystem {
                     break;
                 case 6 :
                     System.out.print("Nearest Below from 30 : ");
-                    System.out.println(numbers.floor(30));
+                    System.out.println(numbers.lower(30));
                     break;
                 case 7 :
                     System.out.print("Nearest above from 30 :");
-                    System.out.print(numbers.ceiling(30));
+                    System.out.print(numbers.higher(30));
                     break;
                 case 8 :
                     System.out.println("Exit");
